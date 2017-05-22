@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <style>
+
+
+            .box {
+			border: 1px solid black;
+			background-color: yellow;
+			height: 100px;
+			width: 222px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+
+            .box2 {
+			border: 2px solid black;
+			background-color: aqua;
+			height: 100px;
+			width: 400px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+            .box4 {
+			border: 2px solid black;
+			background-color: white;
+			height: 100px;
+			width: 200px;
+			text-align: center;
+			line-height: 100px;
+			/*float: left;*/
+			display: inline-block;
+			margin: 16px;
+		}
+
+
+            body {
+			background-color: white;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
+		.heb {
+			list-style-type: hebrew;
+		}
+		
+		.square {
+			list-style-type: square;
+		}
+		
+		.bullet {
+			list-style-image: url(bullet.png);
+		}
+		
+		li {
+			border: 1px solid white;
+			background-color: white;
+			line-height: 15px;
+			font-size: 35px;
+		}
+		
+		li {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		
+		li {
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+            .video p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+            .video {
+                width: 33.333%;
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+		
+	</style>
+
+		<title>Restaurant</title>
+	</head>
+	<body>
+        
+  <div class="box4"><a href="header.html">Home</a></div>
+  <div class="box4"><a href="header.html">News</a></div>
+  <div class="box4"><a href="header.html">Contact</a></div>
+  <div class="box4"><a href="header.html">About</a></div>
+
+        <audio autoplay loop preload="auto">
+        <source src="Ovinu.mp3" />
+    </audio>
+	<h1>teddy's Restaurant</h1>
+	<hr>
+	<br><br><br><br><br>
+        <ul class="bullet">
+    <li>
+        
+	<h2>Hamburger</h2>
+	<a href="hamburger_details.html"><font color="FF00CC"><img src="images/hamburger.jpg" alt="hamburger" /></font></a>
+	</li>
+            <li>
+            <p><h2>Hot Dog</h2></p>
+	<img src="images/hot_dog.jpg" alt="hot dog"/>
+        </li>
+
+        </ul>
+        
+         
+        <div class="box2"><h2>Desserts</h2></div>
+        <div class="box2"><h2>Appetizers</h2></div>
+        <div class="box2">Beverages</div>
+        <div class="box2">Soups</div>
+        <div class="box2">Main Course</div>
+        <div class="box2">Entree`</div>
+        <div class="box2">Chinese</div>
+
+        <div class="video" title="A great video">
+        <video controls preload="none" poster="class1.png">
+            <source src="class1.mp4" />
+        </video>
+        <p>class1</p>
+    </div>
+	</body>
+</html>
