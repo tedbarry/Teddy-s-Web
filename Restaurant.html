@@ -7,6 +7,55 @@
         <link rel="stylesheet" type="text/css" href="normalize.css">
         <style>
 
+            #myform {
+            background-color: black;
+            color: white;
+            }
+
+            #myfoods {
+            max-width: 350px;
+            padding: 10px;
+            border-bottom: 1px solid black;
+            border-top: 1px solid #3c3c3c;
+            background-color: black;
+            color: white;
+            }
+            /* id selector */
+        #it {
+            color: red;
+        }
+
+        /* type selector */
+        div {
+            background-color: aqua;
+        }
+
+        /* class selector */
+        /* comma is either (either .foo or section)*/
+        .foo, section {
+            font-size: 35px;
+        }
+
+        /* space is right inside of left (section inside of .foo) */
+        .foo section {
+            font-family: cursive;
+        }
+
+        .foo p {
+            background-color: blue;
+        }
+
+        /* Only immediate children*/
+        .foo > p {
+            font-weight: bold;
+        }
+
+        /* p that immediately follows a section */
+        section + p {
+            font-style: italic;
+        }
+
+
 
             .box {
 			border: 1px solid black;
@@ -45,7 +94,7 @@
 
 
             body {
-			background-color: white;
+			background: linear-gradient(teal, blue, black);
 			max-width: 1000px;
 			margin: 0 auto;
 		}
@@ -115,12 +164,13 @@
 	<hr>
 	<br><br><br><br><br>
         <ul class="bullet">
-    <li>
+    <li id="myfoods">
         
 	<h2>Hamburger</h2>
-	<a href="hamburger_details.html"><font color="FF00CC"><img src="images/hamburger.jpg" alt="hamburger" /></font></a>
+	<a href="hamburger_details.html"><font color="FF00CC"><img src="images/burger.png" alt="hamburger" /></font></a>
 	</li>
-            <li>
+            <li id="myfoods">
+
             <p><h2>Hot Dog</h2></p>
 	<img src="images/hot_dog.jpg" alt="hot dog"/>
         </li>
@@ -142,5 +192,17 @@
         </video>
         <p>class1</p>
     </div>
+
+        <p>
+        <div id="myform">
+            To Sign Up For Our Daily Lunch Specials, Please Fill Out Form:<form action="processOrder.php" method="post">
+        <label>First Name <input type="text" name="firstName"/></label>
+        <label for="lastName">Last Name</label> <input type="text" id="lastName" name="lastName"/>
+
+        <input type="submit"/>
+    </form>
+        </div>
+
+        </p>
 	</body>
 </html>
